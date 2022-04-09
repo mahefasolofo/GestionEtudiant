@@ -55,26 +55,49 @@ public class JFrameGestionEtudiant extends javax.swing.JFrame {
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(null);
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Gestion Etudiant");
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(0, 26, 686, 32);
 
         jLabelNomEtudiant.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabelNomEtudiant.setText("Nom");
+        getContentPane().add(jLabelNomEtudiant);
+        jLabelNomEtudiant.setBounds(70, 100, 27, 16);
+        getContentPane().add(jTextFieldNomEtu);
+        jTextFieldNomEtu.setBounds(130, 90, 430, 30);
 
         jLabelPrenomEtudiant.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabelPrenomEtudiant.setText("Prenom");
+        getContentPane().add(jLabelPrenomEtudiant);
+        jLabelPrenomEtudiant.setBounds(70, 140, 42, 16);
+        getContentPane().add(jTextFieldPrenomEtu);
+        jTextFieldPrenomEtu.setBounds(130, 130, 430, 30);
 
         jLabelAdresseEtudiant.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabelAdresseEtudiant.setText("Adresse");
+        getContentPane().add(jLabelAdresseEtudiant);
+        jLabelAdresseEtudiant.setBounds(41, 180, 70, 16);
+        getContentPane().add(jTextFieldAdresseEtu);
+        jTextFieldAdresseEtu.setBounds(130, 170, 430, 30);
 
         jButtonAjouter.setText("Ajouter");
+        getContentPane().add(jButtonAjouter);
+        jButtonAjouter.setBounds(360, 260, 110, 25);
 
         jButtonAnnuler.setText("Annuler");
+        getContentPane().add(jButtonAnnuler);
+        jButtonAnnuler.setBounds(220, 260, 110, 25);
 
         jLabelContactEtudiant.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabelContactEtudiant.setText("Contact");
+        getContentPane().add(jLabelContactEtudiant);
+        jLabelContactEtudiant.setBounds(70, 220, 42, 16);
+        getContentPane().add(jTextFieldContactEtu);
+        jTextFieldContactEtu.setBounds(130, 210, 430, 30);
 
         jTableEtudiant.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -111,90 +134,18 @@ public class JFrameGestionEtudiant extends javax.swing.JFrame {
             jTableEtudiant.getColumnModel().getColumn(4).setPreferredWidth(30);
         }
 
+        getContentPane().add(jScrollPane1);
+        jScrollPane1.setBounds(20, 320, 662, 120);
+
         jButtonModifier.setText("Modifier");
+        getContentPane().add(jButtonModifier);
+        jButtonModifier.setBounds(360, 540, 110, 25);
 
         jButtonSupprimer.setText("Supprimer");
+        getContentPane().add(jButtonSupprimer);
+        jButtonSupprimer.setBounds(220, 540, 110, 25);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(172, 172, 172)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabelAdresseEtudiant)
-                        .addGap(18, 18, 18)
-                        .addComponent(jTextFieldAdresseEtu))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabelPrenomEtudiant)
-                        .addGap(18, 18, 18)
-                        .addComponent(jTextFieldPrenomEtu))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jLabelNomEtudiant)
-                        .addGap(18, 18, 18)
-                        .addComponent(jTextFieldNomEtu, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                        .addComponent(jLabelContactEtudiant)
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextFieldContactEtu)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addGap(0, 11, Short.MAX_VALUE)
-                                .addComponent(jButtonAjouter)
-                                .addGap(33, 33, 33)
-                                .addComponent(jButtonAnnuler)
-                                .addGap(29, 29, 29)))))
-                .addGap(199, 199, 199))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButtonModifier)
-                        .addGap(18, 18, 18)
-                        .addComponent(jButtonSupprimer)
-                        .addGap(220, 220, 220)))
-                .addContainerGap())
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(26, 26, 26)
-                .addComponent(jLabel1)
-                .addGap(39, 39, 39)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabelNomEtudiant)
-                    .addComponent(jTextFieldNomEtu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabelPrenomEtudiant)
-                    .addComponent(jTextFieldPrenomEtu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabelAdresseEtudiant)
-                    .addComponent(jTextFieldAdresseEtu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabelContactEtudiant)
-                    .addComponent(jTextFieldContactEtu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(46, 46, 46)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButtonAnnuler)
-                    .addComponent(jButtonAjouter))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButtonModifier)
-                    .addComponent(jButtonSupprimer))
-                .addContainerGap(30, Short.MAX_VALUE))
-        );
-
-        setSize(new java.awt.Dimension(700, 800));
+        setSize(new java.awt.Dimension(706, 619));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
